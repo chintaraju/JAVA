@@ -1,0 +1,150 @@
+Control statements in Java are used to control the flow of execution of the program based on certain conditions or
+the repetition of a block of code. They include decision-making statements.
+(like if-else and switch), looping statements (like for, while, and do-while), and branching statements (like break, continue, and return).
+
+Decision-Making Statements
+  if,if-else and nested if else.
+
+if()-> if condition is true only it will ecute black of statements other it will come outof loop.
+public static void main(String[] ars){
+int i=10;
+if(i%2==0){
+System.out.println("given value is even number")
+}
+}
+
+
+if-else Statement:
+The if-else statement is used to execute a block of code if a condition is true, and another block of code if the condition is false.
+
+public class IfElseExample {
+    public static void main(String[] args) {
+        int number = 10;
+
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        } else {
+            System.out.println("The number is not positive.");
+        }
+    }
+}
+switch Statement: maching statement  will excuted.
+The switch statement allows you to choose between multiple options.
+
+public class SwitchExample {
+    public static void main(String[] args) {
+        int day = 3;
+        String dayName;
+
+        switch (day) {
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break;
+            case 4:
+                dayName = "Thursday";
+                break;
+            case 5:
+                dayName = "Friday";
+                break;
+            case 6:
+                dayName = "Saturday";
+                break;
+            case 7:
+                dayName = "Sunday";
+                break;
+            default:
+                dayName = "Invalid day";
+                break;
+        }
+
+        System.out.println("Day: " + dayName);
+    }
+}
+Looping Statements
+The for loop is used to execute a block of code a specific number of times.
+and we have for ,while and do while .
+for:
+public class ForLoopExample {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Count: " + i);
+        }
+    }
+}
+while Loop
+The while loop executes a block of code as long as the condition is true.
+
+while:
+
+public class WhileLoopExample {
+    public static void main(String[] args) {
+        int i = 1;
+
+        while (i <= 5) {
+            System.out.println("Count: " + i);
+            i++;
+        }
+    }
+}
+do-while Loop
+The do-while loop is similar to the while loop, but it guarantees that the code block will be executed at least once.
+
+do-while:
+public class DoWhileLoopExample {
+    public static void main(String[] args) {
+        int i = 1;
+
+        do {
+            System.out.println("Count: " + i);
+            i++;
+        } while (i <= 5);
+    }
+}
+Branching Statements
+break Statement
+The break statement is used to exit a loop or switch statement prematurely.
+
+
+public class BreakExample {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            if (i == 5) {
+                break; // Exit the loop when i is 5
+            }
+            System.out.println("Count: " + i);
+        }
+    }
+}
+continue Statement
+The continue statement is used to skip the current iteration of a loop and proceed to the next iteration.
+
+public class ContinueExample {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            if (i == 5) {
+                continue; // Skip the iteration when i is 5
+            }
+            System.out.println("Count: " + i);
+        }
+    }
+}
+return Statement
+The return statement is used to exit from a method and optionally return a value.
+
+public class ReturnExample {
+    public static void main(String[] args) {
+        int result = addNumbers(5, 3); // Calling the method
+        System.out.println("Sum: " + result);
+    }
+
+    // Method definition
+    public static int addNumbers(int a, int b) {
+        return a + b; // Return the sum of a and b
+    }
+}

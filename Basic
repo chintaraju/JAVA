@@ -1,0 +1,37 @@
+1. Introduction to Java.
+Java is a popular, high-level, object-oriented programming language. It is platform-independent, which means code written in Java can run on any device that has the Java Virtual Machine (JVM).
+
+2. Basic Structure of a Java Program
+A simple Java program consists of a class with a main method. This method is the entry point of any Java application.
+how to print hellow world:
+
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); // Prints Hello, World! to the console
+    }
+}
+
+
+Key words: key words is presurve word which is already developed by the developer  how to perform.
+rules: can not be used key words as method names,class names or variable.
+eg: public ,void , Data types, control statements, break,throws,throw,extends,impliments,new etc
+ variable: variable is like container to store the data according to the data types.
+
+3. Variables and Data Types
+Java has several data types, including int, double, char, and String.
+
+
+public class DataTypes {
+    public static void main(String[] args) {
+        int age = 25; // Integer
+        double salary = 55000.50; // Floating-point number
+        char grade = 'A'; // Single character
+        String name = "John"; // String (sequence of characters)
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Salary: $" + salary);
+        System.out.println("Grade: " + grade);
+    }
+}
